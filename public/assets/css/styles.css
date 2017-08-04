@@ -87,7 +87,7 @@
 
 /* line 1, ../compass/sass/_keycomponents.scss */
 .key-components {
-  height: 450px;
+  height: 650px;
   background-color: #e9ebef;
 }
 
@@ -109,10 +109,169 @@
   padding: 10px 20px;
 }
 
+/* line 20, ../compass/sass/_keycomponents.scss */
+.kc-nav {
+  margin-left: 120px;
+  padding: 30px;
+}
+/* line 21, ../compass/sass/_keycomponents.scss */
+.kc-nav a {
+  text-decoration: none;
+  border-left: transparent solid 3px;
+}
+/* line 27, ../compass/sass/_keycomponents.scss */
+.kc-nav .kc-button {
+  padding: 30px 20px;
+}
+/* line 30, ../compass/sass/_keycomponents.scss */
+.kc-nav .kc-button:active {
+  border-left: #003d75 solid 3px;
+  background-color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 3px -3px lightgray;
+}
+/* line 36, ../compass/sass/_keycomponents.scss */
+.kc-nav .link-wrapper {
+  display: inline-block;
+  border-left: 1px solid #003d75;
+}
+
+/* line 42, ../compass/sass/_keycomponents.scss */
+.selected {
+  border-left: #003d75 solid 3px;
+  background-color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 3px -3px lightgray;
+}
+
+/* line 49, ../compass/sass/_keycomponents.scss */
+.kc-desc {
+  height: 200px;
+  width: 65%;
+  margin-top: 20px;
+  margin-left: 150px;
+  border-left: #003d75 solid 3px;
+  background-color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 3px -3px lightgray;
+}
+
+/* line 60, ../compass/sass/_keycomponents.scss */
+.kc-desc-section {
+  display: inline-block;
+}
+/* line 62, ../compass/sass/_keycomponents.scss */
+.kc-desc-section p {
+  margin: 70px 80px 0px 150px;
+  font-size: 18px;
+}
+
+/* line 68, ../compass/sass/_keycomponents.scss */
+.kc-desc-icon {
+  float: left;
+  margin-top: 70px;
+  margin-left: 60px;
+}
+
+/* line 75, ../compass/sass/_keycomponents.scss */
+.brochure-button {
+  margin-top: 60px;
+  outline: none;
+}
+/* line 78, ../compass/sass/_keycomponents.scss */
+.brochure-button .download-button {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #003d75;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
 /* line 1, ../compass/sass/_footer.scss */
 .footer {
   background-color: #1d1d1d;
   height: 200px;
+  padding-top: 50px;
+  color: #8e8e8e;
+}
+
+/* line 8, ../compass/sass/_footer.scss */
+.mit-elec-logo-footer {
+  height: 115px;
+}
+
+/* line 12, ../compass/sass/_footer.scss */
+.fa {
+  color: #1d1d1d;
+  padding: 8px;
+}
+
+/* line 17, ../compass/sass/_footer.scss */
+.footer-links {
+  padding: 0px 50px;
+  height: 115px;
+  margin-left: 0px;
+}
+/* line 21, ../compass/sass/_footer.scss */
+.footer-links hr {
+  height: 1px;
+  background-color: darkgray;
+  border: 0;
+  margin-left: 65px;
+  width: 80%;
+}
+
+/* line 30, ../compass/sass/_footer.scss */
+.social {
+  padding-right: 70px;
+}
+
+/* line 34, ../compass/sass/_footer.scss */
+.social-button {
+  display: inline-block;
+  background-color: #8e8e8e;
+  height: 30px;
+  width: 30px;
+  margin: 10px 17px;
+  border-radius: 15px;
+}
+
+/* line 43, ../compass/sass/_footer.scss */
+.social a {
+  color: #1d1d1d;
+}
+
+/* line 47, ../compass/sass/_footer.scss */
+.b-blog {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  padding-top: 8px;
+  font-size: 8px;
+  line-height: 8px;
+}
+/* line 54, ../compass/sass/_footer.scss */
+.b-blog .lg-b {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 60, ../compass/sass/_footer.scss */
+.sitemap {
+  line-height: 9px;
+}
+/* line 62, ../compass/sass/_footer.scss */
+.sitemap a {
+  font-size: 10px;
+  color: #8e8e8e;
+  margin: 0px 10px;
+}
+
+/* line 69, ../compass/sass/_footer.scss */
+.copywrite {
+  font-size: 10px;
+  margin: 5px;
 }
 
 /* line 7, ../compass/sass/styles.scss */

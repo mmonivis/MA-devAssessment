@@ -1,5 +1,5 @@
 .key-components{
-	height: 450px;
+	height: 650px;
 	background-color: $light-gray-bg;
 }
 
@@ -14,5 +14,73 @@
 	}
 	p{
 		padding: 10px 20px;
+	}
+}
+
+.kc-nav{
+	a{
+		text-decoration: none;
+		border-left: transparent solid 3px;
+	}
+	margin-left: 120px;
+	padding: 30px;
+	.kc-button{
+		padding: 30px 20px;
+	}
+	.kc-button:active{
+		border-left: #003d75 solid 3px;
+		background-color: #fff;
+		font-weight: bold;
+		box-shadow: 4px 4px 3px -3px lightgray;
+	}
+	.link-wrapper{
+		display: inline-block;
+		border-left: 1px solid #003d75;
+	}
+}
+
+.selected{
+	border-left: #003d75 solid 3px;
+	background-color: #fff;
+	font-weight: bold;
+	box-shadow: 4px 4px 3px -3px lightgray;
+}
+
+.kc-desc{
+	height: 200px;
+	width: 65%;
+	margin-top: 20px;
+	margin-left: 150px;
+	border-left: #003d75 solid 3px;
+	background-color: #fff;
+	font-weight: bold;
+	box-shadow: 4px 4px 3px -3px lightgray;
+}
+
+.kc-desc-section{
+	display: inline-block;
+	p{
+		margin: 70px 80px 0px 150px;
+		font-size: 18px;
+	}
+}
+
+.kc-desc-icon{
+	float: left;
+	margin-top: 70px;
+	margin-left: 60px;
+}
+
+
+.brochure-button{
+	margin-top: 60px;
+	outline: none;
+	.download-button{
+		border: none;
+		outline: none;
+		color: #fff;
+    	background-color: $blue-button;
+    	padding: 10px 25px;
+    	border-radius: 5px;
 	}
 }

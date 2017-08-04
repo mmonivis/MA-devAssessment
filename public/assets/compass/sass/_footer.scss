@@ -1,4 +1,72 @@
 .footer{
 	background-color: $dark-gray-bg;
 	height: 200px;
+	padding-top: 50px;
+	color: $footer-gray;
+}
+
+.mit-elec-logo-footer{
+	height: 115px;
+}
+
+.fa{
+	color: $dark-gray-bg;
+	padding: 8px;
+}
+
+.footer-links{
+	padding: 0px 50px;
+	height: 115px;
+	margin-left: 0px;
+	hr{
+		height: 1px;
+	    background-color: darkgray;
+	    border: 0;
+        margin-left: 65px;
+        width: 80%;
+	}
+}
+
+.social{
+	padding-right: 70px;
+}
+
+.social-button{
+	display: inline-block;
+	background-color: $footer-gray;
+	height: 30px;
+	width: 30px;
+	margin: 10px 17px;
+	border-radius: 15px;
+}
+
+.social a{
+	color: $dark-gray-bg;
+}
+
+.b-blog{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	padding-top: 8px;
+	font-size: 8px;
+	line-height: 8px;
+	.lg-b{
+		font-weight: bold;
+		font-size: 18px;
+	}
+}
+
+.sitemap{
+	line-height: 9px;
+	a{
+		font-size: 10px;
+		color: $footer-gray;
+		margin: 0px 10px;
+	}
+}
+
+.copywrite{
+	font-size: 10px;
+	margin: 5px;
 }
