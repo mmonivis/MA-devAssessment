@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'masthead';
+@import 'intro';
+@import 'keycomponents';
+@import 'footer';
+
+body{
+	font-family: "Gotham Book", sans-serif;
+}
+
+h1{
+	color: $red-header;
+}
+
+hr{
+	height: 2px;
+    background-color: darkgray;
+    border: 0;
+    width: 10em;
+    margin-left: 0px;
+}

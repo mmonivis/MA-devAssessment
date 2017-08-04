@@ -1,0 +1,40 @@
+@import 'variables';
+
+.masthead{
+	height: 100%;
+}
+
+.mit-elec-logo{
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0 4px 1px -1px lightgray;
+	img{
+		height: 60px;
+		margin: 10px 20px;
+	}
+}
+
+.masthead-info-section{
+	margin-top: 80px;
+	background-color: #fff;
+	background-image: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.7)), url('../images/Vail-082.png');
+    background-attachment: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 100px;
+    p{
+    	padding-right: 50%;
+    	margin-bottom: 50px;
+    }
+    a{
+    	color: #fff;
+    	background-color: $blue-button;
+    	padding: 10px 40px;
+    	border-radius: 5px;
+    }
+}
+
