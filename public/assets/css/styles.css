@@ -48,6 +48,7 @@
   background-color: #003d75;
   padding: 10px 40px;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 /* line 1, ../compass/sass/_intro.scss */
@@ -137,7 +138,7 @@
 }
 
 /* line 42, ../compass/sass/_keycomponents.scss */
-.selected {
+.active {
   border-left: #003d75 solid 3px;
   background-color: #fff;
   font-weight: bold;
@@ -274,17 +275,95 @@
   margin: 5px;
 }
 
-/* line 7, ../compass/sass/styles.scss */
+@font-face {
+  font-family: "Gotham Book";
+  src: url("../fonts/Gotham_Book.otf") format("opentype");
+}
+/* line 3, ../compass/sass/_emailform.scss */
+.modal-backdrop {
+  background-color: #003d75;
+  opacity: 0.9;
+}
+
+/* line 8, ../compass/sass/_emailform.scss */
+.form-header {
+  margin: 20px 0px 10px 0px;
+  padding: 30px 100px;
+}
+/* line 11, ../compass/sass/_emailform.scss */
+.form-header hr {
+  margin: 0 auto;
+  background-color: #000;
+  margin-bottom: 40px;
+  height: 1px;
+}
+/* line 17, ../compass/sass/_emailform.scss */
+.form-header h4 {
+  font-size: 16px;
+}
+
+/* line 22, ../compass/sass/_emailform.scss */
+.email-form {
+  padding: 10px 30px;
+}
+/* line 24, ../compass/sass/_emailform.scss */
+.email-form hr {
+  height: 1px;
+  background-color: #f2f2f2;
+  border: 0;
+  width: 100%;
+}
+
+/* line 32, ../compass/sass/_emailform.scss */
+.form-row {
+  margin-bottom: 30px;
+}
+/* line 34, ../compass/sass/_emailform.scss */
+.form-row .red-star {
+  color: red;
+}
+/* line 37, ../compass/sass/_emailform.scss */
+.form-row .input-form {
+  padding: 5px 10px;
+}
+/* line 40, ../compass/sass/_emailform.scss */
+.form-row input {
+  line-height: 30px;
+  width: 100%;
+  border: 1px #f2f2f2 solid;
+  border-radius: 3px;
+  background-color: #fbfbfb;
+  outline: none;
+}
+
+/* line 50, ../compass/sass/_emailform.scss */
+.submit-button {
+  text-align: center;
+  padding-bottom: 50px;
+}
+/* line 53, ../compass/sass/_emailform.scss */
+.submit-button Button {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #003d75;
+  padding: 10px 65px;
+  border-radius: 5px;
+  font-weight: none;
+}
+
+/* line 8, ../compass/sass/styles.scss */
 body {
   font-family: "Gotham Book", sans-serif;
 }
 
-/* line 11, ../compass/sass/styles.scss */
+/* line 12, ../compass/sass/styles.scss */
 h1 {
   color: #e42526;
 }
 
-/* line 15, ../compass/sass/styles.scss */
+/* line 16, ../compass/sass/styles.scss */
 hr {
   height: 2px;
   background-color: darkgray;

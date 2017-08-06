@@ -1,0 +1,63 @@
+@import 'variables';
+
+.modal-backdrop{
+	background-color: #003d75;
+	opacity: 0.9;
+}
+
+.form-header{
+	margin: 20px 0px 10px 0px;
+	padding: 30px 100px;
+	hr{
+		margin: 0 auto;
+		background-color: #000;
+		margin-bottom: 40px;
+		height: 1px;
+	}
+	h4{
+		font-size: 16px;
+	}
+}
+
+.email-form{
+	padding: 10px 30px;
+	hr{
+		height: 1px;
+	    background-color: #f2f2f2;
+	    border: 0;
+	    width: 100%;
+	}
+}
+
+.form-row{
+	margin-bottom: 30px;
+	.red-star{
+		color: red;
+	}
+	.input-form{
+		padding: 5px 10px;
+	}
+	input{
+		line-height: 30px;
+		width: 100%;
+		border: 1px #f2f2f2 solid;
+		border-radius: 3px;
+		background-color: #fbfbfb;
+		outline: none;
+	}
+}
+
+.submit-button{
+	text-align: center;
+	padding-bottom: 50px;
+	Button{
+		margin-top: 10px;
+		border: none;
+		outline: none;
+		color: #fff;
+    	background-color: $blue-button;
+    	padding: 10px 65px;
+    	border-radius: 5px;
+    	font-weight: none;
+	}
+}
