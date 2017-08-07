@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import Brand from './keycomponents/Brand';
 import Product from './keycomponents/Product';
 import Advertising from './keycomponents/Advertising';
@@ -12,16 +12,11 @@ import $ from 'jquery';
 
 class KeyComponents extends Component {
 
-	handleModal(){
-
+	componentDidMount() {
+		
 	}
 
   render() {
-
-	// $('.kc-button').click(function(){
-	// 	$('.kc-button').removeClass("selected");
-	// 	$(this).addClass("selected");
-	// });
 
     return (
     <Router>
@@ -32,13 +27,13 @@ class KeyComponents extends Component {
 	        	<hr />
 	        </div>
 	        <div className="kc-nav col-md-12">
-	        	<a className="kc-button"><Link to="/brand" activeClassName="active">BRAND</Link></a>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/product" activeClassName="active">PRODUCT</Link></a></div>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/advertising" activeClassName="active">ADVERTISING</Link></a></div>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/leads" activeClassName="active">LEADS</Link></a></div>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/support" activeClassName="active">SUPPORT</Link></a></div>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/warranty" activeClassName="active">WARRANTY</Link></a></div>
-	        	<div className="link-wrapper"><a className="kc-button"><Link to="/recognition" activeClassName="active">RECOGNITION</Link></a></div>
+	        	<div className="kc-button"><NavLink to="/brand">BRAND</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/product">PRODUCT</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/advertising">ADVERTISING</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/leads">LEADS</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/support">SUPPORT</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/warranty">WARRANTY</NavLink></div>
+	        	<div className="kc-button"><NavLink to="/recognition">RECOGNITION</NavLink></div>
 	        </div>
 	        <div className="kc-desc col-md-12">
 	        	<Route exact path="/" component={Brand} />

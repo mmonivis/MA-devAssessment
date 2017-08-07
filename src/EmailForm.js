@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import { Popover, Tooltip, Button, Modal, OverlayTrigger } from 'react-bootstrap';
+import $ from 'jquery';
 
 class EmailForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showModal: false
+      showModal: false,
     }
     this.open = this.open.bind(this)
     this.close = this.close.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   
@@ -19,6 +21,26 @@ class EmailForm extends Component {
 
   open() {
     this.setState({ showModal: true });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    var formData = $("#email_form").serialize();
+    console.log(formData);
+    $.ajax({
+      method: "POST",
+      data: formData,
+      url: 'http://marissamonivis.com/email_handler.php'
+    }).then(function(data){
+      data = JSON.parse(data);
+      console.log(data.message);
+      if (data.message == 'Success!'){
+        alert('Thank you for your submission. We will be in touch with you shortly!');
+      }else{
+        alert('Please try submitting your email again.');
+      }
+    })
+    this.close();
   }
 
   render() {
@@ -37,16 +59,16 @@ class EmailForm extends Component {
               <hr />
               <h4>If you would like to learn more about how the Diamond Contractor program can help you build your business or are ready to get started, please complete the form below. We will contact you shortly to see how we can help.</h4>
             </div>
-            <form>
+            <form id="email_form" method="post" onSubmit={this.handleSubmit}>
               <div className="email-form">
                 <div className="form-row col-md-12">
                   <div className="input-form col-xs-6">
                     <span className="red-star">*</span> FIRST NAME
-                    <input type="text" name="first" />
+                    <input type="text" name="first_name" />
                   </div>
                   <div className="input-form col-xs-6">
                     <span className="red-star">*</span> LAST NAME
-                    <input type="text" name="last" />
+                    <input type="text" name="last_name" />
                   </div>
                 </div>
                 <div className="form-row col-md-12">
@@ -71,11 +93,11 @@ class EmailForm extends Component {
                 </div>
                 <hr className="submit-hr" />
               </div>
-            </form>
 
-            <div className="submit-button">
-              <Button onClick={this.close}>SUBMIT</Button>
-            </div>
+              <div className="submit-button">
+                <input id="submit" type="submit" name="submit" value="submit" />
+              </div>
+            </form>
           </Modal.Body>
         </Modal>
       </div>

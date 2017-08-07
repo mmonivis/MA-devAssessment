@@ -18,32 +18,22 @@
 }
 
 .kc-nav{
-	a{
-		text-decoration: none;
-		border-left: transparent solid 3px;
-	}
 	margin-left: 120px;
 	padding: 30px;
 	.kc-button{
+		display: inline-block;
+	}
+	a{
+		text-decoration: none;
+		border-left: transparent solid 3px;
 		padding: 30px 20px;
 	}
-	.kc-button:active{
+	a.active{
 		border-left: #003d75 solid 3px;
 		background-color: #fff;
 		font-weight: bold;
 		box-shadow: 4px 4px 3px -3px lightgray;
 	}
-	.link-wrapper{
-		display: inline-block;
-		border-left: 1px solid #003d75;
-	}
-}
-
-.active{
-	border-left: #003d75 solid 3px;
-	background-color: #fff;
-	font-weight: bold;
-	box-shadow: 4px 4px 3px -3px lightgray;
 }
 
 .kc-desc{
